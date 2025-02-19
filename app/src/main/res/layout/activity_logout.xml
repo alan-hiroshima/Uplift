@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="198dp"
             android:layout_height="218dp"
-            android:background="@drawable/group"
+
             android:backgroundTint="#4A4947"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
