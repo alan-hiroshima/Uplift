@@ -10,7 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 class LoginActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+//        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_developer_page)
 
 
     }
