@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bluish"
+    tools:context=".LandingPage">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fire"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black_bluish"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/comfy_home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is your comfy place 😎"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:elevation="6dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/drawable_home"
+        app:layout_constraintStart_toStartOf="@+id/drawable_home"
+        app:layout_constraintBottom_toBottomOf="@+id/drawable_home"
+        app:layout_constraintTop_toTopOf="@+id/drawable_home"
+
+        tools:layout_editor_absoluteY="179dp" />
+
+    <ImageView
+        android:id="@+id/drawable_home"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/square_for_home"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/ic_profile"
+        android:contentDescription="Profile"
+        android:elevation="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_settings"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/ic_settings"
+        android:contentDescription="Settings"
+        android:elevation="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_developer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_profile" />
+
+    <ImageButton
+        android:id="@+id/btn_developer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/ic_developer"
+        android:contentDescription="Developer"
+        android:elevation="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_developer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_settings" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
