@@ -70,7 +70,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="224dp"
-            android:background="@drawable/logout_image"
+            android:background="@drawable/logout_image_one"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -115,6 +115,7 @@
         android:id="@+id/description1"
         android:layout_width="185dp"
         android:layout_height="180dp"
+        android:padding="10dp"
         android:background="@drawable/developer_border"
         android:backgroundTintMode="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -133,15 +134,98 @@
             android:rotation="-135" />
 
         <TextView
-            android:layout_width="170dp"
-            android:layout_height="130dp"
-            android:text="Lorem porem"
+            android:id="@+id/bio1"
+            android:layout_width="30dp"
+            android:layout_height="17dp"
+            android:text="Bio:"
             android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1" />
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/bio_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Computer Science Student"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/bio1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/skill1"
+            android:layout_width="40dp"
+            android:layout_height="17dp"
+            android:text="Skills:"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            app:layout_constraintTop_toBottomOf="@id/bio_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/skill1_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Basketball, Loving Her!!"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/skill1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/funFact1"
+            android:layout_width="70dp"
+            android:layout_height="17dp"
+            android:text="Fun Facts:"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            app:layout_constraintTop_toBottomOf="@id/skill1_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/funFact1_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Basketball, Loving Her!!"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/funFact1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -166,7 +250,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="224dp"
-            android:background="@drawable/logout_image"
+            android:background="@drawable/logout_image_one"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -229,7 +313,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="130dp"
-            android:text="Lorem porem"
+            android:text="Hobbies:\n"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
