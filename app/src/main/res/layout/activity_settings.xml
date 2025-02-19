@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_bluish">
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".04"
+        app:layout_constraintVertical_bias="0.04"
+        tools:ignore="MissingConstraints" />
+
+    <!--    Settings Title-->
+    <TextView
+        android:id="@+id/SettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        
+        android:textColor="@color/white"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <!--    Account-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accountSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SettingsTitle">
+
+        <ImageView
+            android:id="@+id/accountIcon"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:background="@drawable/baseline_account_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Account TextView -->
+        <TextView
+            android:id="@+id/accountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".1"
+            app:layout_constraintStart_toEndOf="@id/accountIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Appearance Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appearanceSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="32dp"
+        android:padding="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/accountSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/appearanceIcon"
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:background="@drawable/baseline_appearance_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Appearance TextView -->
+        <TextView
+            android:id="@+id/appearanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appearance"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            
+            app:layout_constraintStart_toEndOf="@id/appearanceIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".11"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Content Preference Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_preferenceSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="32dp"
+        android:padding="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/appearanceSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/content_preferenceIcon"
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:background="@drawable/baseline_format_list_bulleted_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Content Preference TextView -->
+        <TextView
+            android:id="@+id/content_preferenceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content Preference"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            
+            app:layout_constraintStart_toEndOf="@id/content_preferenceIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".17"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Notifications Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notifactionSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="32dp"
+        android:padding="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/content_preferenceSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/notifactionIcon"
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:background="@drawable/baseline_notifications_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            tools:ignore="MissingConstraints" />
+
+        <!-- NOTIFICATION TextView -->
+        <TextView
+            android:id="@+id/notifactionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            
+            app:layout_constraintStart_toEndOf="@id/notifactionIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Support and Privacy -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/supportSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notifactionSection">
+
+        <ImageView
+            android:id="@+id/supportIcon"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:background="@drawable/baseline_support_agent_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            tools:ignore="MissingConstraints" />
+
+        <!-- SUPPORT AND PRIVACY TextView -->
+        <TextView
+            android:id="@+id/supportText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support and Privacy"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            
+            app:layout_constraintStart_toEndOf="@id/supportIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias=".17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- About the Developers Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aboutSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bottom_rounded_button"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supportSection">
+
+        <ImageView
+            android:id="@+id/aboutIcon"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:background="@drawable/baseline_info_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".01"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Developers"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".19"
+            app:layout_constraintStart_toEndOf="@id/aboutIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/full_rounded_corners"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutSection"
+        app:layout_constraintWidth_percent="0.8"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
