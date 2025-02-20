@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:padding="1dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/light_gray">
+    android:background="@color/black_bluish">
 
     <!--Top Divider -->
     <View
         android:id="@+id/topDivider"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/black"
+        android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,7 +24,7 @@
         android:id="@+id/bottomDivider"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/black"
+        android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,7 +43,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/roboto"
 
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".11"
@@ -68,14 +68,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="224dp"
-            android:background="@drawable/logout_image_one"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:background="@drawable/devimage1"
+            app:layout_constraintBottom_toBottomOf="@id/firstImage"
+            app:layout_constraintEnd_toEndOf="@id/firstImage"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@id/firstImage"
+            app:layout_constraintTop_toTopOf="@id/firstImage"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -96,11 +96,14 @@
         tools:ignore="MissingConstraints">
 
         <TextView
+            android:id="@+id/fulllname1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alan Christian Neis"
-            android:textSize="18dp"
-            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +112,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <!-- description -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/description1"
@@ -117,7 +119,7 @@
         android:layout_height="180dp"
         android:padding="10dp"
         android:background="@drawable/developer_border"
-        android:backgroundTintMode="@color/light_gray"
+        android:backgroundTintMode="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"
@@ -130,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/baseline_arrow_back_24"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/white"
             android:rotation="-135" />
 
         <TextView
@@ -138,7 +140,7 @@
             android:layout_width="30dp"
             android:layout_height="17dp"
             android:text="Bio:"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
             android:paddingStart="5dp"
@@ -155,7 +157,7 @@
             android:layout_width="165dp"
             android:layout_height="20dp"
             android:text="Computer Science Student"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:paddingStart="5dp"
             android:paddingTop="2dp"
@@ -170,7 +172,7 @@
             android:layout_width="40dp"
             android:layout_height="17dp"
             android:text="Skills:"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
             android:paddingStart="5dp"
@@ -186,7 +188,7 @@
             android:layout_width="165dp"
             android:layout_height="20dp"
             android:text="Basketball, Loving Her!!"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:paddingStart="5dp"
             android:paddingTop="2dp"
@@ -201,7 +203,7 @@
             android:layout_width="70dp"
             android:layout_height="17dp"
             android:text="Fun Facts:"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
             android:paddingStart="5dp"
@@ -217,7 +219,7 @@
             android:layout_width="165dp"
             android:layout_height="20dp"
             android:text="Basketball, Loving Her!!"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:paddingStart="5dp"
             android:paddingTop="2dp"
@@ -248,13 +250,13 @@
 
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="224dp"
-            android:background="@drawable/logout_image_one"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:background="@drawable/developers_page_image1"
+            app:layout_constraintBottom_toBottomOf="@id/secondImage"
+            app:layout_constraintEnd_toEndOf="@id/secondImage"
+            app:layout_constraintStart_toStartOf="@id/secondImage"
+            app:layout_constraintTop_toTopOf="@id/secondImage"
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints" />
 
@@ -276,11 +278,14 @@
         tools:ignore="MissingConstraints">
 
         <TextView
+            android:id="@+id/fulllname2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Christian Nemeno"
-            android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
@@ -290,6 +295,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- description -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="185dp"
         android:layout_height="185dp"
@@ -297,24 +303,24 @@
         android:backgroundTintMode="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nameSecond_container"
-        app:layout_constraintVertical_bias="0.089"
+        app:layout_constraintVertical_bias="0.065"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/baseline_arrow_back_24"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/white"
             android:rotation="-135" />
 
         <TextView
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:text="Hobbies:\n"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -327,7 +333,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/baseline_arrow_back_24"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="10dp"
