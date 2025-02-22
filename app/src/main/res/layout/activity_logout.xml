@@ -8,7 +8,7 @@
     android:background="@color/black_bluish"
     tools:context=".LogoutActivity">
 
-    <!-- Image container -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/inner"
         android:layout_width="match_parent"
