@@ -18,15 +18,15 @@
         tools:layout_editor_absoluteY="-67dp">
 
         <ImageView
-            android:layout_width="198dp"
-            android:layout_height="218dp"
+            android:layout_width="305dp"
+            android:layout_height="224dp"
 
-            android:backgroundTint="#4A4947"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.212"
+            app:layout_constraintVertical_bias="0.248"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
