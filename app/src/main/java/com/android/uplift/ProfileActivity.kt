@@ -5,17 +5,22 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 
-class SettingActivity : Activity() {
+
+class ProfileActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings)
+        setContentView(R.layout.activity_profile)
 
+        val backProfileBtn : ImageButton = findViewById(R.id.profile_back_button)
 
-        val backSettingBtn : ImageButton = findViewById(R.id.settingsBackButton)
-
-        backSettingBtn.setOnClickListener {
+        backProfileBtn.setOnClickListener {
             val intent = Intent(this, LandingPage::class.java)
             startActivity(intent)
         }
+
+
     }
+
+
+    
 }

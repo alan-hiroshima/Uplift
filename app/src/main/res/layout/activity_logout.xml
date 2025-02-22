@@ -8,7 +8,7 @@
     android:background="@color/black_bluish"
     tools:context=".LogoutActivity">
 
-    <!-- Image container -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/inner"
         android:layout_width="match_parent"
@@ -16,10 +16,12 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            settings-page
             android:layout_width="305dp"
             android:layout_height="224dp"
             android:background="@drawable/logout_image_three"
             android:backgroundTint="@color/white"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
