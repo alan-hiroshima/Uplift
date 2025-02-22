@@ -16,7 +16,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            settings-page
+
             android:layout_width="305dp"
             android:layout_height="224dp"
             android:background="@drawable/logout_image_three"
