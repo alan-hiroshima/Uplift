@@ -18,7 +18,8 @@
         <ImageView
             android:layout_width="305dp"
             android:layout_height="224dp"
-            android:background="@drawable/logout_image"
+            android:background="@drawable/logout_image_three"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777"
+        app:layout_constraintVertical_bias="0.773"
         tools:ignore="MissingConstraints" />
 
     <!-- No button -->
@@ -63,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintVertical_bias="0.852"
         tools:ignore="MissingConstraints" />
 
     <!-- Bye Message Text -->
@@ -73,7 +74,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="You are Leaving, are you"
-        android:textColor="#B17457"
+        android:textColor="@color/light_gray"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +89,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="sure you want to go?"
-        android:textColor="#B17457"
+        android:textColor="@color/light_gray"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
