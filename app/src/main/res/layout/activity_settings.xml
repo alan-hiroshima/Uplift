@@ -78,7 +78,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Appearance Button -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appearanceSection"
         android:layout_width="match_parent"
@@ -127,7 +126,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
@@ -176,7 +175,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
@@ -225,7 +224,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
@@ -274,7 +273,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
@@ -323,7 +322,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:background="@drawable/settings_arrow_forward_ios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
