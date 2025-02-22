@@ -132,7 +132,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_back_24"
+            android:background="@drawable/general_arrow_back_24"
             android:backgroundTint="@color/white"
             android:rotation="-135" />
 
@@ -313,7 +313,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/baseline_arrow_back_24"
+            android:background="@drawable/general_arrow_back_24"
             android:backgroundTint="@color/white"
             android:rotation="-135" />
 
@@ -333,7 +333,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/general_arrow_back_24"
         android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
