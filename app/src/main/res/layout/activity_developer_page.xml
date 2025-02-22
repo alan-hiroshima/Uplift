@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_bluish">
+
+    <!--Top Divider -->
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints"/>
+
+    <!-- Bottom Divider -->
+    <View
+        android:id="@+id/bottomDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/developers_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="Meet the Developers"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingStart="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topDivider"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 1st Profile -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstImage"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:background="@drawable/devimage1"
+            app:layout_constraintBottom_toBottomOf="@id/firstImage"
+            app:layout_constraintEnd_toEndOf="@id/firstImage"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@id/firstImage"
+            app:layout_constraintTop_toTopOf="@id/firstImage"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <!-- Name Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nameFirst_container"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/fulllname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alan Christian Neis"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- description -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/description1"
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        android:padding="10dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameFirst_container"
+        app:layout_constraintVertical_bias="0.028"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:rotation="-135" />
+
+        <TextView
+            android:id="@+id/bio1"
+            android:layout_width="30dp"
+            android:layout_height="17dp"
+            android:text="Bio:"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/bio_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Computer Science Student"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/bio1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/skill1"
+            android:layout_width="40dp"
+            android:layout_height="17dp"
+            android:text="Skills:"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            app:layout_constraintTop_toBottomOf="@id/bio_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/skill1_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Basketball, Loving Her!!"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/skill1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/funFact1"
+            android:layout_width="70dp"
+            android:layout_height="17dp"
+            android:text="Fun Facts:"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            app:layout_constraintTop_toBottomOf="@id/skill1_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/funFact1_description"
+            android:layout_width="165dp"
+            android:layout_height="20dp"
+            android:text="Basketball, Loving Her!!"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/funFact1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- 2ND Profile -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondImage"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description1"
+        app:layout_constraintVertical_bias="0.173"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:background="@drawable/developers_page_image1"
+            app:layout_constraintBottom_toBottomOf="@id/secondImage"
+            app:layout_constraintEnd_toEndOf="@id/secondImage"
+            app:layout_constraintStart_toStartOf="@id/secondImage"
+            app:layout_constraintTop_toTopOf="@id/secondImage"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Name Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nameSecond_container"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstImage"
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/fulllname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Christian Nemeno"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- description -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:background="@drawable/developer_border"
+        android:backgroundTintMode="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameSecond_container"
+        app:layout_constraintVertical_bias="0.065"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:rotation="-135" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:text="Hobbies:\n"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_arrow_back_24"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
