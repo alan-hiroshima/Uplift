@@ -59,6 +59,7 @@ android {
 dependencies {
     implementation("com.airbnb.android:lottie:5.0.3")
 
+
     // ends
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
