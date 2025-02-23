@@ -12,9 +12,11 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".EditProfileActivity"
             android:exported="false" />
-        <!-- android:theme="@style/Theme.Uplift" -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> <!-- android:theme="@style/Theme.Uplift" -->
         <activity
             android:name=".LandingPage"
             android:exported="false" />
