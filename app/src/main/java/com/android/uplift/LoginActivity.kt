@@ -11,8 +11,8 @@ class LoginActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_login)
-        setContentView(R.layout.activity_developer_page)
+       setContentView(R.layout.activity_login)
+        //setContentView(R.layout.activity_developer_page)
 
 
         val loginButton: Button = findViewById(R.id.login_button)

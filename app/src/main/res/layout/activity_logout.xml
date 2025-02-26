@@ -30,6 +30,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:id="@+id/confirm_button"
         android:textAllCaps="false"
         android:layout_width="314dp"
         android:layout_height="48dp"
@@ -51,6 +52,7 @@
 
     <!-- No button -->
     <Button
+        android:id="@+id/no_button"
         android:layout_width="314dp"
         android:layout_height="48dp"
         android:background="@drawable/logout_text_border"
